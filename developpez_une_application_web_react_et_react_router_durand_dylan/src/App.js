@@ -1,9 +1,9 @@
 import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import HomePage from './components/HomePage/HomePage';
-import APropos from './components/APropos/APropos';
-import Page404 from './components/Page404/Page404';
-import Detail from './components/Detail/Detail';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import HomePage from './components/HomePage/HomePage.js';
+import APropos from './components/APropos/APropos.js';
+import Page404 from './components/Page404/Page404.js';
+import Detail from './components/Detail/Detail.js';
 
 function App() {
   return (
