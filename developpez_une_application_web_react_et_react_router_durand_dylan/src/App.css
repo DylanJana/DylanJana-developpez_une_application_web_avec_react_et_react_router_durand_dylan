@@ -1,3 +1,21 @@
+html {
+  font-size: 24px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.text--center {
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
@@ -7,6 +25,10 @@
   pointer-events: none;
 }
 
+/*** Color Theme ***/
+.text--primary {
+  color: #FF6060;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -1,0 +1,18 @@
+footer {
+    padding: 66px 0 29px 0;
+}
+
+footer img {
+    margin-bottom: 51px;
+}
+
+.t--dark {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:576px) {
+    .footer__copyright {
+        font-size: 0.5rem;
+    }
+}

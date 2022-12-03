@@ -6,7 +6,7 @@ class Banner extends Component {
   render() {
     return (
       <div className='container my-3 home-banner'>
-        <p className='banner-text'>Chez vous, partout et ailleurs</p>
+        <h1 className='banner-text'>Chez vous, partout et ailleurs</h1>
       </div>
     )
   }

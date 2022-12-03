@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import './aproposbanner.css';
 
 class AProposBanner extends Component {
   render() {
     return (
       <div>
-        a propos banner
+        <div className='container my-3 propos-banner'>
+        </div>
       </div>
     )
   }
