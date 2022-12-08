@@ -1,0 +1,50 @@
+.accordion-item{
+    border:none;
+    margin-bottom:31px;
+}
+.accordion-button{
+    background-color:#ff6060;
+    border-radius:5px;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: none!important;
+    font-size:24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.acordion-title-text{
+    flex-grow: 1;
+}
+
+.accordion-button.collapsed::after {
+ width:25px;
+ height: 25px;
+ background: url('../../images/arrow-down.png');
+ background-size:contain;
+ background-repeat: no-repeat;
+}
+.accordion-button:not(.collapsed)::after {
+
+ background: url('../../images/arrow-down.png');
+ background-size:contain;
+ background-repeat: no-repeat;
+
+}
+
+.accordion-button:not(.collapsed) {
+ background-color: #ff6060;
+ color:white;
+}
+
+.accordion-body{
+ min-height:146px;
+ padding:0;
+ padding:36px 27px 19px 18px;
+ background-color: #f6f6f6;
+ border-radius: 5px;
+ font-size:20px;
+ color:#ff6060;
+}
