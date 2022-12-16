@@ -5,8 +5,10 @@ import './banner.css';
 class Banner extends Component {
   render() {
     return (
-      <div className='container my-3 home-banner'>
-        <h1 className='banner-text'>Chez vous, partout et ailleurs</h1>
+      <div className='l-container--md'>
+        <div className='home__banner'>
+          <h1 className='title--xl text--white home__banner-txt'>Chez vous, partout et ailleurs</h1>
+        </div>
       </div>
     )
   }

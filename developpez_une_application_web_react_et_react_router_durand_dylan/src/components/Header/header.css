@@ -1,4 +1,4 @@
-.header{
+/*.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,5 +33,35 @@
     }
     .item1{
         padding-right: 15px;
+    }
+}*/
+
+.nav__list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav__list-item {
+    margin-right: 56px;
+}
+
+.nav__list-link {
+    color: #FF6060;
+    text-decoration: none;
+}
+
+.nav__list-link:hover {
+    color: #FF6060;
+    text-decoration: underline;
+}
+
+.nav__list-link.active {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav__list-item {
+        margin-right: 10px;
     }
 }

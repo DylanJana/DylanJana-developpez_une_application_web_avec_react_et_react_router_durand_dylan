@@ -1,12 +1,25 @@
-.home-banner{
-    height:223px;
-    border-radius: 25px;
-    background-image:url(../../images/homebanner.png);
-    background-size:cover;
+.home__banner{
     display:flex;
     align-items: center;
     justify-content: center;
+    height:223px;
+    border-radius: 25px;
+    padding: 0px 16px 0px 16px;
+    background-image:url(../../images/homebanner.png);
+    background-size:cover;
 }
+
+@media (max-width: 576px) {
+    .home__banner {
+        background-position: center;
+        justify-content: start;
+        height: 111px;
+    }
+    .home__banner-txt {
+        max-width: 9.2em;
+    }
+}
+/*
 .banner-text{
     font-size:48px;
     font-weight: bold;
@@ -22,4 +35,4 @@
     .banner-text{
         font-size:20px;
     }
-}
+}*/

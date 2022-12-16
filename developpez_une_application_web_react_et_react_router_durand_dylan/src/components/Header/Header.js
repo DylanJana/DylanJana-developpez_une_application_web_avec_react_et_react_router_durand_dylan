@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     return (
         //my-5 margin-y : Create marge horizontal
-      <header className='container my-4 header'>
+      <header className='l-container--md d--flex justify--space-between align-items--center mt--md mb--lg'>
         <div>
             <NavLink to='/'>
                 <svg className="logo" width="211" height="68" viewBox="0 0 211 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,9 +19,13 @@ class Header extends Component {
             </NavLink>
         </div>
         <nav>
-            <ul className='nav'>
-                <li className='nav-item item1'><NavLink className='nav-link' to='/' style={({isActive}) => ({textDecoration:isActive ? 'underline' : 'none'})}>Accueil</NavLink></li>
-                <li className='nav-item item2'><NavLink className='nav-link' to='/a-propos' style={({isActive}) => ({textDecoration:isActive ? 'underline' : 'none'})}>A Propos</NavLink></li>
+            <ul className='nav__list d--flex'>
+                <li className='nav__list-item'>
+                  <NavLink className='nav__list-link title--md' to='/'>Accueil</NavLink>
+                </li>
+                <li className='nav__list-item'>
+                  <NavLink className='nav__list-link title--md' to='/a-propos'>A Propos</NavLink>
+                </li>
             </ul>
         </nav>
       </header>
