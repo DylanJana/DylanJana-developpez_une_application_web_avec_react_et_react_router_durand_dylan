@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import "./slider.css";
 
 class Slider extends Component {
@@ -31,10 +30,8 @@ class Slider extends Component {
                   <div key={index} className="carousel-item">
                     <img src={picture} className="d-block w-100 img-fluid" alt={cardinfo.title}
                     />
-
                     <div className="carousel-caption d-none d-md-block">
                       {/* comme l'index commence par 0 alors on ajoute +1. */}
-
                       <p className="current-slide-text">
                         {index + 1} / {cardinfo.pictures.length}
                       </p>
