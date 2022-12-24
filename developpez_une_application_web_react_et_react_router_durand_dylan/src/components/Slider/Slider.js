@@ -4,7 +4,7 @@ import "./slider.css";
 class Slider extends Component {
   render() {
     // destructing props react
-    // je récupère le propos de detail.js qui est son parent.
+    // je récupère le props de detail.js qui est son parent. Ainsi que toutes les infos liés au props
     const { cardinfo } = this.props;
     return (
       // className=container permet l'alignement sur la gauche avec le logo
@@ -47,11 +47,9 @@ class Slider extends Component {
               <>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                   <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Previous</span>
                 </button>
                 <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                   <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Next</span>
                 </button>
               </>
             ) : null
