@@ -16,15 +16,6 @@ p {
   text-align: center;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 /*** Containers ***/
 .l-container--md {
   height: 100%;
@@ -104,6 +95,11 @@ p {
   border-radius: 10px;
 }
 
+/*** Sizing ***/
+.w--100 {
+  width: 100%;
+}
+
 /*** Tablet / Phone Responsive ***/
 @media (max-width: 768px) {
 
@@ -133,7 +129,7 @@ p {
     font-weight: 500;
   }
 }
-@media (prefers-reduced-motion: no-preference) {
+/*@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -161,4 +157,4 @@ p {
   to {
     transform: rotate(360deg);
   }
-}
+}*/

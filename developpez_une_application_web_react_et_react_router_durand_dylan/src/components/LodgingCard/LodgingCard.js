@@ -11,7 +11,7 @@ class LodgingCard extends Component {
           <NavLink to={'/lodging/'+this.props.id}>
             <div className='grid-item__body br--sm' style={{ backgroundImage: "url(" + this.props.coverpicture + ")"}}>
               <div className='grid-item--gradient d--flex align-items--end br--sm'>
-                <p className='text--white'>{this.props.title}</p>
+                <p className='text--white w--100'>{this.props.title}</p>
               </div>
             </div>
           </NavLink>

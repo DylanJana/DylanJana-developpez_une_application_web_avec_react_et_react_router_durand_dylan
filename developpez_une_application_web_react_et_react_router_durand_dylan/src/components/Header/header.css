@@ -50,6 +50,10 @@ header {
     margin-right: 56px;
 }
 
+.nav__list .nav__list-item:last-child {
+    margin-right: 0;
+}
+
 .nav__list-link {
     color: #FF6060;
     text-decoration: none;

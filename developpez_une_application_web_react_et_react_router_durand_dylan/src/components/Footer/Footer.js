@@ -5,7 +5,7 @@ import './footer.css';
 class Footer extends Component {
   render() {
     return (
-      <footer className='t--dark d-flex justify-content-center align-items-center'>
+      <footer className='t--dark d-flex justify-content-center align-items--center mt--md'>
         <div className='text--center'>
           <img src={whiteLogo} alt='Logo de kasa blanc' />
           <p className='footer__copyright'>© 2020 Kasa. All rights reserved</p>

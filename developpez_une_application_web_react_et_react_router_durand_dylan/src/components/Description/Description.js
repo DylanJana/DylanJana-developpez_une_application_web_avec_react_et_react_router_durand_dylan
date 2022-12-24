@@ -6,7 +6,7 @@ import "./description.css";
 class Description extends Component {
   // avec React la création d'un constructor est obligatoire pour créer un state ou l'utiliser.
   constructor(props) {
-    //récupère les particularités de la class parent
+    //Récupère les props présentes de la classe parente.
     super(props);
     // State signifie statut. Avec React par ex obtenir un statut cliqué ou non cliqué pour un bouton on crée un state.
     this.state = {
@@ -14,9 +14,10 @@ class Description extends Component {
       descriptionOn: false
     };
   }
+
   changeDescriptionState = () => {
     this.setState({
-      // change le statut de descriptionOne par son inverse, s'il est true, il deviendra false, ainsi de suite.
+      // J'attribue à descriptionOn la valeur contraire de son statut actuel. False devient True, True devient False. 
       descriptionOn: !this.state.descriptionOn,
     });
   };

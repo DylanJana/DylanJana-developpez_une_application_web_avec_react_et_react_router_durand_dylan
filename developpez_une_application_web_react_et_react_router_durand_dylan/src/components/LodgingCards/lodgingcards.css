@@ -1,6 +1,6 @@
 .grid-container {
     margin-top: 40px;
-    padding: 50px;
+    padding: 0 50px 50px 50px;
     background-color: #f7f7f7;
     border-radius: 25px;
 }
