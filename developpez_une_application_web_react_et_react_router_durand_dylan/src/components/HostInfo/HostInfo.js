@@ -17,51 +17,22 @@ class HostInfo extends Component {
         <div className="star-rating">
           {/* si le rating est égale 1 alors on place une étoile pleine et 4 étoiles vides, etc */
           /** Tester avec une boucle */}
-          {rating === "1" && (
-            <>
-              <img src={starfull} />
-              <img src={starempty} />
-              <img src={starempty} />
-              <img src={starempty} />
-              <img src={starempty} />
-            </>
-          )}
-          {rating === "2" && (
-            <>
-              <img src={starfull} />
-              <img src={starfull} />
-              <img src={starempty} />
-              <img src={starempty} />
-              <img src={starempty} />
-            </>
-          )}
-          {rating === "3" && (
-            <>
-              <img src={starfull} />
-              <img src={starfull} />
-              <img src={starfull} />
-              <img src={starempty} />
-              <img src={starempty} />
-            </>
-          )}
-          {rating === "4" && (
-            <>
-              <img src={starfull} />
-              <img src={starfull} />
-              <img src={starfull} />
-              <img src={starfull} />
-              <img src={starempty} />
-            </>
-          )}
-          {rating === "5" && (
-            <>
-              <img src={starfull} />
-              <img src={starfull} />
-              <img src={starfull} />
-              <img src={starfull} />
-              <img src={starfull} />
-            </>
-          )}
+          {function() {
+            let stars = [];
+            for(let i = 0; i < 5; i++ ) {
+              if(rating <= i) {
+                stars.push(<img src={starempty} key={i} />);
+              } else {
+                stars.push(<img src={starfull} key={i} />)
+              }
+            }
+            return (
+              <>
+                {stars}
+              </>
+            )
+          }()
+          }
         </div>
       </div>
     );
@@ -69,3 +40,16 @@ class HostInfo extends Component {
 }
 
 export default HostInfo;
+
+function AddorRemoveStars(rating) {
+  for(let i = 0; i < 5; i++ ) {
+    if(rating <= i) {
+      let starFull = new Image();
+      starFull.src = "images/starfull.svg";
+      let div = document.createElement('div').appendChild(starFull);
+      document.querySelector('body').appendChild(div)
+    } else {
+      <img src={starempty} />
+    }
+  }
+}
