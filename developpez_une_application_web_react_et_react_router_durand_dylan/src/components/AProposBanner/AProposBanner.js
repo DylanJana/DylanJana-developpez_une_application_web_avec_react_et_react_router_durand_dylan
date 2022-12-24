@@ -5,7 +5,8 @@ class AProposBanner extends Component {
   render() {
     return (
       <div>
-        <div className='container my-3 propos-banner'>
+        <div className='l-container--md'>
+          <div className='propos-banner'></div>
         </div>
       </div>
     )

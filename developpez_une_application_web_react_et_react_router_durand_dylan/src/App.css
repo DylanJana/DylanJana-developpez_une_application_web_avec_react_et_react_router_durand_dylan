@@ -35,6 +35,14 @@ p {
   padding-left: 100px;
 }
 
+.l-container--sm {
+  max-width: 1423px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
 /*** Layout ***/
 .d--flex {
   display: flex;
@@ -100,6 +108,11 @@ p {
 @media (max-width: 768px) {
 
   .l-container--md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .l-container--sm {
     padding-left: 20px;
     padding-right: 20px;
   }

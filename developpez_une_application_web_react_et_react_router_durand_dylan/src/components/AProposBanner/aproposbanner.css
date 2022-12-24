@@ -1,9 +1,10 @@
 .propos-banner{
     height:223px;
-    border-radius: 25px;
-    background-image:url(../../images/propos-banner.png);
-    background-size:cover;
     display:flex;
     align-items: center;
     justify-content: center;
+    border-radius: 25px;
+    background-image:url(../../images/propos-banner.png);
+    background-size:cover;
+    margin-bottom: 20px;
 }
