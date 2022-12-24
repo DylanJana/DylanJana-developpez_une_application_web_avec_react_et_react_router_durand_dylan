@@ -39,7 +39,10 @@ export default function Detail() {
                   localisation={card.location}
                   tags={card.tags}
                 />
-                <HostInfo hostinfo={card.host} rating={card.rating} />
+                <HostInfo 
+                hostinfo={card.host} 
+                rating={card.rating} 
+                />
 
                 <DetailAccordions
                   equipmentProps={card.equipments}
