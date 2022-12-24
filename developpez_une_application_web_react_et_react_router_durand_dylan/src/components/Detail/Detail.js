@@ -1,6 +1,5 @@
 // Fonctions React useEffet pour récupération des données et useState pour suivre l'état d'un composant fonction.
 import React, { useEffect, useState } from "react";
-// la fct useParams est utilisé pour pouvoir obtenir l'identifiant de l'annonce à partir du (path).
 import { useParams } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -12,7 +11,7 @@ import DetailAccordions from "../DetailAccordions/DetailAccordions";
 import Page404 from "../Page404/Page404";
 // Utilisation d'un composant fonction pour pouvoir utiliser les fonctions useParams (), useEffet(), useState() . Points communs à ttes ces fct, c'est que leurs valeurs sont modifiables.
 export default function Detail() {
-//  useParams() crochet(=hook) permet de récupérer les paramètres dynamiques (ici l'id du logement )
+//  useParams() crochet(=hook) permet de récupérer les paramètres dynamiques (ici l'id du logement ). Récupére les paramètres de l'URL
   const parameters = useParams();
   // ajout d'un state + la fonction de modification du state
   const [card, setCard] = useState(null);
