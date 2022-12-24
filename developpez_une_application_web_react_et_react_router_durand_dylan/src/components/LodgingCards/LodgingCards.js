@@ -6,9 +6,9 @@ import LodgingDatas from '../../data.json';
 class LodgingCards extends Component {
   render() {
     return (
-      <div>
-        <div className='container p-5 my-3 cards'>
-          <div className='row gx-5'>
+      <div className='l-container--md'>
+        <div className='grid-container'>
+          <div className='row'>
             {
               LodgingDatas.map((lodging) => {
                 return (

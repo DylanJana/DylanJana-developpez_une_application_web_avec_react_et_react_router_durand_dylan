@@ -48,9 +48,17 @@ p {
   align-items: center;
 }
 
+.align-items--end {
+  align-items: end;
+}
+
 /*** Margins ***/
 .mt--md {
   margin-top: 40px;
+}
+
+.mb--md {
+  margin-bottom: 48px;
 }
 
 .mb--lg {
@@ -83,8 +91,14 @@ p {
   color: #FF6060;
 }
 
+/*** Border radius ***/
+.br--sm {
+  border-radius: 10px;
+}
+
 /*** Tablet / Phone Responsive ***/
 @media (max-width: 768px) {
+
   .l-container--md {
     padding-left: 20px;
     padding-right: 20px;

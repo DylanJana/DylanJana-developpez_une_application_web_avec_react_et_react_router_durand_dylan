@@ -1,27 +1,43 @@
-.card{
-    border:none;
-    background-color: transparent;
-    height:320px;
+.grid-container .column {
+    margin-bottom: 48px;
 }
 
-.card-body{
+.grid-item {
     height:340px;
     background:#ff6060;
     border-radius: 10px;
-    position:relative;
 }
-.card-text{
-    font-size:16px;
-    height:40px;
-    font-weight: bold;
-    color:#fff;
-    position:absolute;
-    left:5.88%;
-    bottom:5.88%;
+
+.grid-item a {
+    text-decoration: none;
 }
+
+.grid-item__body {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item--gradient {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 39%, rgba(0,0,0,0.6615021008403361) 100%);
+}
+
+.grid-item--gradient p {
+    padding: 20px;
+}
+
 @media (max-width:768px){
     .card{
         width:100%!important;
         margin-bottom:30px!important;
+    }
+
+    .grid-item {
+        height: 255px;
+    }
+    .grid-container .column {
+        margin-bottom: 24px;
     }
 }

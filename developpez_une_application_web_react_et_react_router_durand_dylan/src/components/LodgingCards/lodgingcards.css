@@ -1,4 +1,21 @@
-.cards{
+.grid-container {
+    margin-top: 40px;
+    padding: 50px;
     background-color: #f7f7f7;
     border-radius: 25px;
+}
+
+.grid-container .row {
+    margin: 0 -24px 0 -24px;
+}
+
+.grid-container .column {
+    padding: 0 24px 0 24px;
+}
+
+@media (max-width:768px) {
+    .grid-container {
+        padding: 0;
+        margin-top: 24px;
+    }
 }

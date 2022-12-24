@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     return (
         //my-5 margin-y : Create marge horizontal
-      <header className='l-container--md d--flex justify--space-between align-items--center mt--md mb--lg'>
+      <header className='l-container--md d--flex justify--space-between align-items--center'>
         <div>
             <NavLink to='/'>
                 <svg className="logo" width="211" height="68" viewBox="0 0 211 68" fill="none" xmlns="http://www.w3.org/2000/svg">
