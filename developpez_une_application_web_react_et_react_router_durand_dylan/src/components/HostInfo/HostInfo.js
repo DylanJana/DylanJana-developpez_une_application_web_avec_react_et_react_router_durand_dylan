@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./hostinfo.css";
-import starfull from "../../images/starfull.svg";
-import starempty from "../../images/starempty.svg";
+import starfull from "../../svg/starfull.svg";
+import starempty from "../../svg/starempty.svg";
 
 class HostInfo extends Component {
   render() {
@@ -11,7 +11,7 @@ class HostInfo extends Component {
         <div className="host-parent">
           <div className="host-name">{hostinfo.name}</div>
           <div>
-            <img src={hostinfo.picture} className="img-fluid host-picture" />
+            <img src={hostinfo.picture} className="img-fluid host-picture" alt="arrow indicator" />
           </div>
         </div>
         <div className="star-rating">
@@ -21,9 +21,9 @@ class HostInfo extends Component {
             let stars = [];
             for(let i = 0; i < 5; i++ ) {
               if(rating <= i) {
-                stars.push(<img src={starempty} key={i} />);
+                stars.push(<img src={starempty} key={i} alt="arrow indicator" />);
               } else {
-                stars.push(<img src={starfull} key={i} />)
+                stars.push(<img src={starfull} key={i} alt="arrow indicator" />)
               }
             }
             return (
@@ -40,16 +40,3 @@ class HostInfo extends Component {
 }
 
 export default HostInfo;
-
-function AddorRemoveStars(rating) {
-  for(let i = 0; i < 5; i++ ) {
-    if(rating <= i) {
-      let starFull = new Image();
-      starFull.src = "images/starfull.svg";
-      let div = document.createElement('div').appendChild(starFull);
-      document.querySelector('body').appendChild(div)
-    } else {
-      <img src={starempty} />
-    }
-  }
-}

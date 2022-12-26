@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import chevronhaut from "../../images/arrow-up.png";
-import chevronbas from "../../images/arrow-down.png";
+import arrow from "../../images/arrow-down.png";
 import "./description.css";
 
 class Description extends Component {
@@ -24,22 +23,22 @@ class Description extends Component {
   render() {
     const { description } = this.props;
     return (
-      <div className="col-12 col-lg-6 description-area">
+      <div className="column col-12 col-lg-6">
         <div
-          className="description-title"
+          className="dropdown__title d--flex align-items--center justify--space-between br--sm"
           onClick={this.changeDescriptionState}
         >
-          <div className="description-text">Description</div>
+          <p>Description</p>
           <div>
             {this.state.descriptionOn ? (
-              <img src={chevronbas} className="img-fluid arrow-img" />
+              <img src={arrow} className="img-fluid arrow-img" alt='arrow indicator' />
             ) : (
-              <img src={chevronhaut} className="img-fluid arrow-img" />
+              <img src={arrow} className="img-fluid arrow-img--rotate" alt='arrow indicator' />
             )}
           </div>
         </div>
         {this.state.descriptionOn ? (
-          <div className="description-bigtext">{description}</div>
+          <div className="dropdown__content br--sm">{description}</div>
         ) : null}
       </div>
     );

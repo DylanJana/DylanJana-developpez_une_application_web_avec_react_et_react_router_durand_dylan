@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import arrowup from "../../images/arrow-up.png";
-import arrowdown from "../../images/arrow-down.png";
+import arrow from "../../images/arrow-down.png";
 import "./equipments.css";
 
 class Equipments extends Component {
@@ -29,9 +28,9 @@ class Equipments extends Component {
 
           <div>
             {this.state.equipmentsOn ? (
-              <img src={arrowdown} className="img-fluid arrow-img" />
+              <img src={arrow} className="img-fluid arrow-img" />
             ) : (
-              <img src={arrowup} className="img-fluid arrow-img" />
+              <img src={arrow} className="img-fluid arrow-img--rotate" />
             )}
           </div>
         </div>

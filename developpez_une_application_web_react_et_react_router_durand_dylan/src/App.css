@@ -108,6 +108,16 @@ p {
   width: 100%;
 }
 
+/*** Anim arrow ***/
+.arrow-img{
+  transition: 0.5s;
+  transform:scale(0.75);
+}
+
+.arrow-img--rotate {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
 /*** Tablet / Phone Responsive ***/
 @media (max-width: 768px) {
 

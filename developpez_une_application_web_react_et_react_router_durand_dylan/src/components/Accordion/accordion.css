@@ -15,6 +15,19 @@
     margin-bottom: 0;
 }
 
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-button.collapsed .arrow-img {
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+.accordion-button .arrow-img {
+    transform: scale(0.75);
+    transition: 0.5s;
+}
+
 .acordion-title-text{
     flex-grow: 1;
 }
