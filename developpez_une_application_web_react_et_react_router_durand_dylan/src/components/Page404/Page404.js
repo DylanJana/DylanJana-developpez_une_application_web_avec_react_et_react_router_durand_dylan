@@ -8,9 +8,11 @@ class Page404 extends Component {
     return (
       <div>
         <Header />
-        <div className='container my-3 d-flex flex-column text--center text--primary'>
+        <div className='l-container--md d--flex flex--column text--center text--primary'>
+          <div className='error-container__content'>
             <p className='error-container__folio'>404</p>
             <p className='error-container__msg'>Oups! La page que vous demandez n'existe pas.</p>
+          </div>
             <NavLink className='error-container__link text--primary' to='/'>Retourner sur la page d’accueil</NavLink>
         </div>
       </div>

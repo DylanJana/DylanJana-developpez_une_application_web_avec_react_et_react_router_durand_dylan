@@ -1,5 +1,6 @@
 .grid-container .column {
     margin-top: 48px;
+    padding: 0 24px 0 24px;
 }
 
 .grid-item {
@@ -37,7 +38,9 @@
     .grid-item {
         height: 255px;
     }
+
     .grid-container .column {
+        margin-top: 0;
         margin-bottom: 24px;
     }
 }

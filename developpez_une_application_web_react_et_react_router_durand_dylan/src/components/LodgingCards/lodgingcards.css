@@ -9,13 +9,10 @@
     margin: 0 -24px 0 -24px;
 }
 
-.grid-container .column {
-    padding: 0 24px 0 24px;
-}
-
 @media (max-width:768px) {
     .grid-container {
         padding: 0;
         margin-top: 24px;
+        background-color: transparent;
     }
 }

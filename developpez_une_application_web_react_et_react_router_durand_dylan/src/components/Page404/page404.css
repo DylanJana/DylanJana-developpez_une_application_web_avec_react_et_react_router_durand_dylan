@@ -1,16 +1,20 @@
+.error-container__content {
+    margin: 105px 0 182px 0;
+}
+
 .error-container__folio {
-    font-size: 12rem;
+    font-size: 16rem;
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1;
+    margin-bottom: 64px;
 }
 .error-container__msg {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    margin-bottom: 89px;
 }
 
 .error-container__link {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: underline;
 }
@@ -21,15 +25,36 @@
 }
 
 @media (max-width:992px) {
+    .error-container__content {
+        margin: 195px 0 133px 0;
+    }
+
     .error-container__folio {
-        font-size: 4rem;
+        font-size: 8rem;
+        margin-bottom: 11px;
     }
 
     .error-container__msg {
-        font-size: 0.75rem;
+        font-size: 1.5rem;
     }
 
     .error-container__link {
-        font-size: 0.58rem;
+        font-size: 0.77rem;
+    }
+}
+
+@media (max-width:768px) {
+    .error-container__folio {
+        font-size: 5.33rem;
+    }
+
+    .error-container__msg {
+        font-size: 1rem;
+        max-width: 12.15em;
+        margin: auto;
+    }
+
+    .error-container__link {
+        font-size: 0.77rem;
     }
 }
