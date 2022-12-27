@@ -6,13 +6,13 @@ class TitleAddress extends Component {
     // Récupération des propos envoyé via le parent Details , il est important de réutiliser le nom des keys
     const { title, localisation, tags } = this.props;
     return (
-      <div className="col-12 col-lg-10">
-        <div className="card-title">{title}</div>
-        <div className="card-localisation">{localisation}</div>
-        <div>
+      <div className="col-12 col-lg-8">
+        <div className="title--lg text--primary">{title}</div>
+        <div className="text--primary mb--sm">{localisation}</div>
+        <div className="mb--sm box-tag">
           {tags.map((tag, index) => {
             return (
-              <span key={index} className="card-tag">
+              <span key={index} className="box-tag__item suptitle br--sm">
                 {tag}
               </span>
             );

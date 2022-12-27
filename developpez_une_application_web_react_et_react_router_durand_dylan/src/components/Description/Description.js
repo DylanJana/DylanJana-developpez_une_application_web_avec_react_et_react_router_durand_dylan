@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import '../../App.css';
 import arrow from "../../images/arrow-down.png";
-import "./description.css";
 
 class Description extends Component {
   // avec React la création d'un constructor est obligatoire pour créer un state ou l'utiliser.

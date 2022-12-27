@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import '../../App.css';
 import arrow from "../../images/arrow-down.png";
-import "./equipments.css";
 
 class Equipments extends Component {
   constructor(props) {
@@ -22,9 +22,12 @@ class Equipments extends Component {
     const { equipments } = this.props;
 
     return (
-      <div className="col-12 col-lg-6 equipments-area">
-        <div className="equipments-title" onClick={this.changeEquipmentsState}>
-          <div className="equipments-text">Equipements</div>
+      <div className=" column col-12 col-lg-6 equipments-area">
+        <div 
+          className="dropdown__title d--flex align-items--center justify--space-between br--sm" 
+          onClick={this.changeEquipmentsState}
+        >
+          <p>Equipements</p>
 
           <div>
             {this.state.equipmentsOn ? (
@@ -36,7 +39,7 @@ class Equipments extends Component {
         </div>
 
         {this.state.equipmentsOn ? (
-          <div className="equipments-bigtext">
+          <div className="dropdown__content br--sm">
             {equipments.map((equipment, i) => {
               return (
                 <div key={i} className="equipment">

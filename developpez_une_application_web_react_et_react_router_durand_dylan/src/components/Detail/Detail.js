@@ -29,11 +29,11 @@ export default function Detail() {
         //<Slider cardinfo={card} /> = nous créons un props pour envoyer les informations de la carte au composant Slider. Nous pouvons lui donner le nom que nous voulons
         <>
           <Header />
-          <div>
+          <div className="l-container--md">
             {/* création et envoi des props(ex: cardinfo, title,...), cette action me permet de transmettre des données que je pourrais réutiliser dans le composant enfant */}
             <Slider cardinfo={card} />
-            <div className="container my-4">
-              <div className="row">
+            <div>
+              <div className="row mt--md justify--space-between">
                 <TitleAddress
                   title={card.title}
                   localisation={card.location}

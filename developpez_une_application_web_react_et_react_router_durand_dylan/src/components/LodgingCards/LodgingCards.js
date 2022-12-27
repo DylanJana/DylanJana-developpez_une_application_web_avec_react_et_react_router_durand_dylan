@@ -7,7 +7,7 @@ class LodgingCards extends Component {
   render() {
     return (
       <div className='l-container--md'>
-        <div className='grid-container'>
+        <div className='grid-container br--md'>
           <div className='row'>
             {
               LodgingDatas.map((lodging) => {

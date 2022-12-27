@@ -7,7 +7,7 @@ class DetailAccordions extends Component {
   render() {
     const { equipmentProps, descriptionProps } = this.props;
     return (
-      <div className="details-container container my-4">
+      <div className="details-container">
         <div className="row">
           <Description description={descriptionProps} />
           <Equipments equipments={equipmentProps} />
