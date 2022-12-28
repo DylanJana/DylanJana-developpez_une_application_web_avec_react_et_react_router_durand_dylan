@@ -1,4 +1,4 @@
-.box-tag {
+.box-tag__container {
   display: flex;
   column-gap: 10px;
 }
@@ -9,8 +9,13 @@
   padding:4px 32px;
 }
 
+@media (max-width: 991px) {
+  .box-tag__container {
+    margin-bottom: 16px;
+  }
+}
 @media (max-width: 568px ) {
-  .box-tag {
+  .box-tag__container {
     column-gap: 8px;
   }
   .box-tag__item {

@@ -8,8 +8,8 @@ class TitleAddress extends Component {
     return (
       <div className="col-12 col-lg-8">
         <div className="title--lg text--primary">{title}</div>
-        <div className="text--primary mb--sm">{localisation}</div>
-        <div className="mb--sm box-tag">
+        <div className="text--primary paragraph--sm mb--sm">{localisation}</div>
+        <div className="box-tag__container">
           {tags.map((tag, index) => {
             return (
               <span key={index} className="box-tag__item suptitle br--sm">

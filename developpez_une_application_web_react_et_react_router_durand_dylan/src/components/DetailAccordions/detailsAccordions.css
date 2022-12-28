@@ -1,7 +1,21 @@
+.details-container {
+  margin-top: 24px;
+}
+
 .details-container .row {
   margin: 0 -24px 0 -24px;
 }
 
 .details-container .column {
   padding: 0 24px 0 24px;
+}
+
+@media (max-width: 991px) {
+  .details-container {
+    margin-top: 40px;
+  }
+  
+  .details-container .row {
+    row-gap: 32px;
+  }
 }

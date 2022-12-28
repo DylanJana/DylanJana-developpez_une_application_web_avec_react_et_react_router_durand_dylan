@@ -11,3 +11,13 @@
 .carousel-control svg:hover {
   color: #ff6060;
 }
+
+@media (max-width: 768px) {
+  .carousel-item__img {
+    height: 255px;
+  }
+  .carousel-control svg {
+    width: 12px;
+    height: 20px;
+  }
+}

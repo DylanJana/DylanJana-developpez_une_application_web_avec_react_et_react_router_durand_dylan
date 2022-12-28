@@ -167,6 +167,7 @@ p {
 }
 
 .dropdown__content {
+  font-weight: 400;
   position: relative;
   z-index: -1;
   background-color:#f6f6f6;
@@ -201,6 +202,18 @@ p {
   .title--xl {
     font-size: 1.33rem;
     font-weight: 500;
+  }
+
+  .title--lg {
+    font-size: 1rem;
+  }
+
+  .paragraph--sm {
+    font-size: 0.78rem;
+  }
+
+  .dropdown__content {
+    font-size: 0.67rem;
   }
 }
 /*@media (prefers-reduced-motion: no-preference) {

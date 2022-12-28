@@ -7,7 +7,7 @@ class HostInfo extends Component {
   render() {
     const { hostinfo, rating } = this.props;
     return (
-      <div className="col-12 col-lg-4 host">
+      <div className="col-12 col-lg-4 host d--flex flex--column align-items--center justify--space-between">
         <div className="d--flex align-items--center justify--end host__container">
           <div className="host__name text--primary mr--xs text--right">{hostinfo.name}</div>
           <div>

@@ -28,7 +28,7 @@ class Description extends Component {
           className="dropdown__title d--flex align-items--center justify--space-between br--sm"
           onClick={this.changeDescriptionState}
         >
-          <p>Description</p>
+          <p className="paragraph--sm">Description</p>
           <div>
             {this.state.descriptionOn ? (
               <img src={arrow} className="img-fluid arrow-img" alt='arrow indicator' />

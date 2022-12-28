@@ -1,5 +1,5 @@
-.host__container {
-  margin-bottom: 16px;
+.host {
+  align-items: flex-end;
 }
 
 .host__picture{
@@ -9,18 +9,32 @@
 }
 .host__name{
   max-width: 5em;
+  font-weight: 500;
 }
 
 @media (max-width: 991px) {
   .host {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: row-reverse;
-    margin-bottom: 16px;
+    align-items: center;
   }
 
   .host__container {
     margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .host__picture {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .host__name {
+    font-size: 0.67rem;
+  }
+
+  .star-rating img {
+    width: 18px;
+    height: 18px;
   }
 }

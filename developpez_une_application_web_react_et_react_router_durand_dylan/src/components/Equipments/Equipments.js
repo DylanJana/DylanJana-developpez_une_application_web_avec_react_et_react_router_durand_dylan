@@ -22,12 +22,12 @@ class Equipments extends Component {
     const { equipments } = this.props;
 
     return (
-      <div className=" column col-12 col-lg-6 equipments-area">
+      <div className=" column col-12 col-lg-6">
         <div 
           className="dropdown__title d--flex align-items--center justify--space-between br--sm" 
           onClick={this.changeEquipmentsState}
         >
-          <p>Equipements</p>
+          <p className="paragraph--sm">Equipements</p>
 
           <div>
             {this.state.equipmentsOn ? (
