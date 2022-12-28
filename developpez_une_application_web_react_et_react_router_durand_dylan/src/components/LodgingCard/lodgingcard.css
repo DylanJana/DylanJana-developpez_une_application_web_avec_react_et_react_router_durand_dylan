@@ -1,8 +1,3 @@
-.grid-container .column {
-    margin-top: 48px;
-    padding: 0 24px 0 24px;
-}
-
 .grid-item {
     height:340px;
     background:#ff6060;
@@ -37,10 +32,5 @@
 
     .grid-item {
         height: 255px;
-    }
-
-    .grid-container .column {
-        margin-top: 0;
-        margin-bottom: 24px;
     }
 }

@@ -20,6 +20,7 @@ export default function Detail() {
       if (lodging.id === parameters.lodgingid) {
         setCard(lodging);
       }
+      return lodging
     });
   });
   return (

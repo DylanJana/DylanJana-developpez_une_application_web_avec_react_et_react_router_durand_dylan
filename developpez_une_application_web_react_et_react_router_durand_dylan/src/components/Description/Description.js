@@ -20,6 +20,7 @@ class Description extends Component {
       descriptionOn: !this.state.descriptionOn,
     });
   };
+
   render() {
     const { description } = this.props;
     return (
@@ -38,7 +39,7 @@ class Description extends Component {
           </div>
         </div>
         {this.state.descriptionOn ? (
-          <div className="dropdown__content br--sm">{description}</div>
+          <div className="dropdown__content pos--rel br--sm">{description}</div>
         ) : null}
       </div>
     );

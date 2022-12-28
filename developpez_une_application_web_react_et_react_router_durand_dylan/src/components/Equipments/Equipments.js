@@ -31,15 +31,15 @@ class Equipments extends Component {
 
           <div>
             {this.state.equipmentsOn ? (
-              <img src={arrow} className="img-fluid arrow-img" />
+              <img src={arrow} className="img-fluid arrow-img" alt="arrow indicator"/>
             ) : (
-              <img src={arrow} className="img-fluid arrow-img--rotate" />
+              <img src={arrow} className="img-fluid arrow-img--rotate" alt="arrow indicator"/>
             )}
           </div>
         </div>
 
         {this.state.equipmentsOn ? (
-          <div className="dropdown__content br--sm">
+          <div className="dropdown__content pos--rel br--sm">
             {equipments.map((equipment, i) => {
               return (
                 <div key={i} className="equipment">

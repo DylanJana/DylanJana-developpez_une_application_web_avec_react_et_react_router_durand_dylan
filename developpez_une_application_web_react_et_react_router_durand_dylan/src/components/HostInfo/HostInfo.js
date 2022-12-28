@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./hostinfo.css";
 import starfull from "../../svg/starfull.svg";
 import starempty from "../../svg/starempty.svg";
+import "./hostinfo.css";
 
 class HostInfo extends Component {
   render() {
@@ -11,7 +11,7 @@ class HostInfo extends Component {
         <div className="d--flex align-items--center justify--end host__container">
           <div className="host__name text--primary mr--xs text--right">{hostinfo.name}</div>
           <div>
-            <img src={hostinfo.picture} className="host__picture" alt="Member picture" />
+            <img src={hostinfo.picture} className="host__picture" alt={hostinfo.name} />
           </div>
         </div>
         <div className="star-rating text--right">
